@@ -1,1 +1,190 @@
-/* There will be a css code for CV task */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background-color: #B2B1B9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: #2C2E43;
+    font-weight: bold;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+/* -----------   HEADER    --------------- */
+
+header {
+    margin: 10px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    list-style-type: none;
+}
+.nav-list li a {
+    font-weight: bold;
+    font-size: 15px;
+    color: #2C2E43;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.nav-list li a:hover {
+    color: #FFD523;
+}
+
+
+/* -----------   MAIN    --------------- */
+
+main {
+    margin: 10px;
+}
+
+
+section {
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+hr {
+    border: none;
+    border-top: 10px dotted #C0C0C0;
+    width: 10%;
+}
+h2 {
+    color: #FFD523;
+}
+
+.middle-container {
+    border-left: 2px solid #2C2E43;
+    border-right: 2px solid #2C2E43;
+
+}
+
+/* -----------   PROFILE    --------------- */
+
+
+#profile {
+    display: flex;
+    justify-content: center;
+
+}
+.profile-item {
+    width: 20%;
+    margin-right: 50px;
+
+}
+
+#profile img {
+    filter: grayscale(100%);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* -----------   SKILLS AND PROJECTS    --------------- */
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+.flex-start-item {
+    width: 50%;
+}
+
+/* -----------   CODE    --------------- */
+
+#code {
+    font-family: 'Space Mono', monospace;
+}
+.code-container {
+    background-color: #C0C0C0;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+/* -----------   CONTACTS    --------------- */
+
+#contacts ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.icons {
+    width: 25px;
+    padding-right: 10px;
+}
+
+/* -----------   FOOTER    --------------- */
+
+footer {
+    margin: 10px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    list-style-type: none;
+}
+.nav-link {
+    font-weight: bold;
+    font-size: 15px;
+    color: #2C2E43;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.nav-link:hover {
+    color: #FFD523;
+}
+.footer-list img {
+    width: 100px;
+}
+
+/* -----------   ADAPTATION    --------------- */
+
+@media (max-width: 768px) {
+    .flex-start {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-item {
+        width: 100px;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    #contacts p {
+        text-align: center;
+    }
+    .footer-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle-container {
+        border: none;
+    }
+    .nav-item {
+        padding-bottom: 5px;
+    }
+    .footer-item {
+        padding-bottom: 10px;
+    }
+}
