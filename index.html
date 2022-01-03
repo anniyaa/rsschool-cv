@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container top-container" id="nav">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">projects</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">code</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">courses</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">languages</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="container middle-container">
+
+            <section class="section" id="profile">
+                <img class="profile-item" src="assets/img/photo.jpg" alt="photo">
+                <h1 class="profile-item section-title">Anna Vi</h1>
+            </section>
+
+            <hr>
+
+            <section class="section" id="about-me">
+                <h2>About me</h2>
+                <p>I was learning JavaScript and Python for 4 months on Udemy before I knew about The RS school. Teaching program, tasks and a lot of practice were impressed me. I expect to make many interesting projects during this course.</p>
+            </section>
+
+            <hr>
+
+            <section class="section flex-start">
+                <div class="skills flex-start-item" id="skills">
+                    <h2>My skills</h2>
+                    <ul>
+                        <li>HTML (in progress)</li>
+                        <li>CSS (in progress)</li>
+                        <li>JavaScript (in progress)</li>
+                        <li>React (in progress)</li>
+                        <li>Node.js (basics)</li>
+                        <li>Python (basics)</li>
+                    </ul>
+                </div>
+                <div class="projects flex-start-item" id="projects">
+                    <h2>My projects</h2>
+                    <p><a href="https://github.com/anniyaa/rsschool-cv">CV</a></p>
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section class="container" id="code">
+                <h2>Code</h2>
+                <div class="code-container">
+
+                    <pre><code>
+    function buttonAnimation(currentKey) {
+
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    }, 100);
+                    </code></pre>
+                </div>
+
+            </section>
+
+            <hr>
+
+
+            <section class="section flex-start">
+                <div class="courses flex-start-item" id="courses">
+                    <h2>Courses</h2>
+                    <p>Web Development Bootcamp (Udemy)</p>
+                    <p>100 Days of Code of Python (Udemy)</p>
+                </div>
+                <div class="languages flex-start-item" id="languages">
+                    <h2>Languages</h2>
+                    <p>Russian(Native)</p>
+                    <p>English(B1)</p>
+                </div>
+
+            </section>
+
+            <hr>
+
+
+            <section class="container" id="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li><img src="assets/img/email.png" alt="email" class="icons">nibiruru@yandex.ru</li>
+                    <li><img src="assets/img/discord.png" alt="discord" class="icons">anni#1355</li>
+                </ul>
+            </section>
+
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container bottom-container">
+
+            <ul class="footer-list">
+                <li class="footer-item"><a href="https://github.com/anniyaa" class="nav-link">GitHub</a></li>
+                <li class="footer-item">2022</li>
+                <li class="footer-item"><a href="https://rs.school/js-stage0/"><img src="assets/img/rs_school_logo.svg" alt="rsschool"></a></li>
+            </ul>
+
+        </div>
+
+
+    </footer>
+
+</body>
+</html>
