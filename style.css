@@ -153,6 +153,13 @@ footer {
 .footer-list img {
     width: 100px;
 }
+a {
+    color: #2C2E43;
+    transition: all 0.3s ease 0s;
+}
+a:hover {
+    color: #FFD523;
+}
 
 /* -----------   ADAPTATION    --------------- */
 
